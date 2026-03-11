@@ -1,0 +1,6 @@
+
+{
+  "name": "Orane-Style Beauty Parlour & Academy",
+  "description": "A premium MERN stack beauty parlour website featuring role-based authentication, service management, appointment booking, and an AI-powered beauty consultant.",
+  "requestFramePermissions": ["camera"]
+}
