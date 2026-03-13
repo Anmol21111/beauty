@@ -19,16 +19,12 @@ app.use(helmet());
 // ✅ FIXED CORS (THIS IS THE MAIN FIX)
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://beauty-kgjp.onrender.com",
-      "https://beauty-backend.onrender.com"
-    ],
-    credentials: true,
+    origin: "*",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"]
   })
 );
+
 
 app.use(express.json({ limit: "1mb" }));
 app.use(morgan("dev"));
